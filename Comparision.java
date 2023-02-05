@@ -38,13 +38,15 @@ public class Comparision {
 		System.out.println("Length of a line-2:"+secondLineLength);
 		
 		
-		if (firstLineLength > secondLineLength) {
+		if ( firstLineLength > secondLineLength) {
 			System.out.println("first Line is bigger");
 		}else if (firstLineLength < secondLineLength ){
 			System.out.println("Second line is bigger");
-		}else{
+		}else {
 			System.out.println("Both are equal");
 		}
+		
+		//System.out.println(firstLineLength.compareto(secondLineLength);--> cannot use compareto method 
 	    s.close();
 	}
 

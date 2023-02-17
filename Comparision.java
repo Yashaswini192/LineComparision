@@ -2,6 +2,7 @@ package Bridge;
 
 import java.util.Scanner;
 import java.lang.Math;
+
 public class Comparision {
 
 	public static void main(String[] args) {
@@ -38,25 +39,17 @@ public class Comparision {
 		System.out.println("Length of a line-2:"+secondLineLength);
 		
 		Comparision c = new Comparision();
-		c.compareTo(firstLineLength,secondLineLength);
+		//c.compareTo(firstLineLength,secondLineLength);
 		c.equals(firstLineLength, secondLineLength);
+		s.close();
 	}	
-		public void compareTo(int firstLineLength, int secondLineLength) {
 		
-		System.out.println("comparision of two lines:"+Integer.compare((firstLineLength),
-				(secondLineLength)));
-	   
-	}
-		
-		public void equals(int firstLineLength, int secondLineLength) {
-			
-			if(firstLineLength > secondLineLength) {
-				System.out.println("first line bigger");
-			}else if(firstLineLength < secondLineLength) {
-				System.out.println("second line bigger");
-			}else {
-				System.out.println("both lines are equal");
-			}
+		public boolean equals(int firstLineLength, int secondLineLength) {
+			if(firstLineLength == secondLineLength) {
+				return true;
+				}
+			return false;
 		}
+		
 		
 }
